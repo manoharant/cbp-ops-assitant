@@ -1,0 +1,581 @@
+message
+key x-channelconsumer has value: BCTL  
+key x-sessionid has value: SID-5e031211-38dd-405b-8b91-4faa92b4d74e  
+creating Header proxy 
+Received request on POST /booking/routeoffer/internalrouteoffer/v8/bestroutes with Json body 
+Subset of headers on POST /booking/routeoffer/internalrouteoffer/v8/bestroutes 
+key x-channelid has value: bookITcargo  
+key x-b3-sampled has value: 0  
+key x-b3-spanid has value: 6ada7f63269323ad  
+"HTTP method: POST, Last part of URL: bestroutes "
+key x-b3-parentspanid has value: 2b1302c25ee33417  
+key x-envoy-attempt-count has value: 1  
+key x-akamai-config-log-detail has value: true  
+key x-envoy-external-address has value: 10.253.203.197  
+key x-appversion has value: 2.18.1  
+key x-forwarded-proto has value: https  
+key x-b3-traceid has value: 419cb75ea23e60512b1302c25ee33417  
+key x-channeluser has value: manoharan.thambi@lhind.dlh.de  
+"key x-userroles has value: HubExpert,CapacityOptimizer,ServiceRecovery,OBS,BCTLSales  "
+"key x-forwarded-client-cert has value: By=spiffe://cluster.local/ns/be-booking-sprint-int/sa/internalrouteoffer-v8;Hash=5e55bdc0d542886e62a7c36827887e65f0f13c3097710e404fe2b54a67fb8621;Subject="""";URI=spiffe://cluster.local/ns/aks-istio-ingress/sa/aks-istio-ingressgateway-internal  "
+key x-request-id has value: ba9e4442-1219-4655-97af-9eabfe300bbd  
+key x-edgeconnect-session-id has value: 3c6adead67c5d3396525781  
+key x-envoy-original-path has value: /int/booking/routeoffer/internalrouteoffer/v8/bestroutes  
+"key x-internal-call has value: 1.1 v1-akamaitech.net(ghost) (AkamaiGHost),1.1 akamai.net(ghost) (AkamaiGHost)  "
+Received request on com.lhcargo.booking.routeoffer.internal.api.internalrouteoffer.controller.InternalrouteofferApi._fetchRoutesUsingPOST() 
+"[AUTHORIZATION] Black listed roles for IAS: [ediBooker, BookingAdaption], User roles: [ServiceRecovery, OBS, HubExpert, BCTLSales, CapacityOptimizer] "
+[IdentityAccessFeignClient#getUserProfiles]  Request Basic Information 
+[IdentityAccessFeignClient#getUserProfiles]  Request Headers 
+Subset of headers on GET /booking/identityaccess/v4/userprofiles 
+Received request on GET /booking/identityaccess/v4/userprofiles 
+key x-channeluser has value: manoharan.thambi@lhind.dlh.de  
+key x-akamai-config-log-detail has value: true  
+key x-forwarded-proto has value: https  
+"key x-forwarded-client-cert has value: By=spiffe://cluster.local/ns/be-booking-sprint-int/sa/identityaccess-v4;Hash=3344bde92ffc4fd97f18ad660b722268aac20cd69b73b9b57237971f5a796c69;Subject="""";URI=spiffe://cluster.local/ns/be-booking-sprint-int/sa/internalrouteoffer-v8  "
+key x-sessionid has value: SID-5e031211-38dd-405b-8b91-4faa92b4d74e  
+key x-channelconsumer has value: BCTL  
+key x-b3-traceid has value: 419cb75ea23e60512b1302c25ee33417  
+key x-envoy-attempt-count has value: 1  
+key x-b3-spanid has value: 37dff072375b2859  
+key x-appversion has value: 2.18.1  
+key x-envoy-external-address has value: 10.253.203.197  
+key x-edgeconnect-session-id has value: 3c6adead67c5d3396525781  
+key x-request-id has value: ba9e4442-1219-4655-97af-9eabfe300bbd  
+key x-envoy-original-path has value: /int/booking/routeoffer/internalrouteoffer/v8/bestroutes  
+"key x-internal-call has value: 1.1 v1-akamaitech.net(ghost) (AkamaiGHost),1.1 akamai.net(ghost) (AkamaiGHost)  "
+"key x-userroles has value: HubExpert,CapacityOptimizer,ServiceRecovery,OBS,BCTLSales  "
+key x-channelid has value: bookITcargo  
+creating Header proxy 
+key x-b3-sampled has value: 0  
+Received request on com.lhcargo.booking.identityaccess.api.controller.UserProfilesApi._getUserProfiles() 
+key x-b3-parentspanid has value: 2741e436b4c8b3fc  
+[User.Get] Found 1 users (search params in payload) 
+Method com.lhcargo.booking.identityaccess.api.controller.UserProfilesApi._getUserProfiles() finished processing in 45ms 
+[IdentityAccessFeignClient#getUserProfiles]  Response Basic Information 
+signInAllowedForAll Optional[true] 
+IROUP: 68ms 
+[IdentityAccessFeignClient#getUserProfiles]  Response Payload 
+[IdentityAccessFeignClient#getUserProfiles]  Response Headers 
+[ShipmentTotalsCalculationService] Calculated total Weight from PieceGroup: 0 
+"Checking if resource POST bestroutes is allowed for role [HubExpert, CapacityOptimizer, ServiceRecovery, OBS, BCTLSales] "
+"[ChannelService] ChannelIdMappings for the user roles from the master data: [ChannelIdMapping(userRole=BCTLSales, channelId=bookITcargo, createdDate=2024-11-27T13:52:39.117, bookingChannel=EASY)] "
+"[ChannelService] API Header after mapping: ApiHeaderVO(conversationId=6241f0cf-e498-45cd-933f-30e711cb9ee7, channelId=bookITcargo, channelConsumer=easyBooking, channelUser=U776856, tenantId=183), x-userRoles: [ServiceRecovery, OBS, HubExpert, BCTLSales, CapacityOptimizer], x-channelUser: manoharan.thambi@lhind.dlh.de "
+"[ChannelService] Create/Update channel mappings for the user roles from the master data: [ChannelIdMapping(userRole=BCTLSales, channelId=bookITcargo, createdDate=2024-11-27T13:52:39.117, bookingChannel=EASY)] "
+[Validate Booking] isUpdateWorkflow: false; booking valid: true 
+[ShipmentTotalsCalculationService] Calculated total Weight from PieceGroup: 0 
+"[ShipmentTotalsCalculationService] Recalculated volume: 1.00,Requested volume: 1 "
+"Type of requested Shipment: BUP - false, ULD - false, BPL - false, Thru-Unit - null) "
+"No Quotation Details present, skipping quotation validation "
+"[ShipmentTotalsCalculationService] Recalculated chargeableWeight: 167.0, Requested chargeableWeight: 167 "
+"[ShipmentTotalsCalculationService][DeriveShipmentTotals] calculatedChargeableWeight: 166.67, chargeableWeightFromRequest: 167, netWeightFromRequest: 100, volumeWeight: 166.67, Min ChargeableWeight: 0.5 "
+Requested NetWeight:100. Requested ChargeableWeight: 167. Derived ChargeableWeight: 167.0. Requested Volume: 1. Derived Volume: 1.00. ChargeableWeightRecalculated: false. VolumeRecalculated: false 
+"[ShipmentTotalsCalculationService][DeriveShipmentTotals] calculatedVolume: 1, netVolumeFromRequest: 1 "
+[ShipmentTotalsCalculationService] Total piece group volume: 1 
+[ProductOfferFeignClient#validateBookingRequest]  Request Headers 
+"No Allotment Details present, skipping allotment validation "
+[ProductOfferFeignClient#validateBookingRequest]  Request Basic Information 
+[ProductOfferFeignClient#validateBookingRequest]  Request Payload 
+Received request on POST /booking/productoffer/v3/bookingrequestvalidation with Json body 
+key x-akamai-config-log-detail has value: true  
+Subset of headers on POST /booking/productoffer/v3/bookingrequestvalidation 
+key x-envoy-external-address has value: 10.253.203.197  
+"HTTP method: POST, Last part of URL: bookingrequestvalidation "
+key x-channelconsumer has value: BCTL  
+"key x-forwarded-client-cert has value: By=spiffe://cluster.local/ns/be-booking-sprint-int/sa/productoffer-v3;Hash=3344bde92ffc4fd97f18ad660b722268aac20cd69b73b9b57237971f5a796c69;Subject="""";URI=spiffe://cluster.local/ns/be-booking-sprint-int/sa/internalrouteoffer-v8  "
+"key x-internal-call has value: 1.1 v1-akamaitech.net(ghost) (AkamaiGHost),1.1 akamai.net(ghost) (AkamaiGHost)  "
+key x-envoy-attempt-count has value: 1  
+key x-channelid has value: bookITcargo  
+key x-b3-traceid has value: 419cb75ea23e60512b1302c25ee33417  
+key x-request-id has value: ba9e4442-1219-4655-97af-9eabfe300bbd  
+key x-b3-parentspanid has value: 91489118fe958492  
+creating Header proxy 
+key x-channeluser has value: manoharan.thambi@lhind.dlh.de  
+key x-b3-spanid has value: 86754a6faf209e67  
+key x-appversion has value: 2.18.1  
+"key x-userroles has value: HubExpert,CapacityOptimizer,ServiceRecovery,OBS,BCTLSales  "
+key x-sessionid has value: SID-5e031211-38dd-405b-8b91-4faa92b4d74e  
+key x-b3-sampled has value: 0  
+key x-forwarded-proto has value: https  
+key x-edgeconnect-session-id has value: 3c6adead67c5d3396525781  
+key x-envoy-original-path has value: /int/booking/routeoffer/internalrouteoffer/v8/bestroutes  
+Received request on com.lhcargo.booking.productoffer.api.controller.BookingValidationApi._validateBookingUsingPOST() 
+[Perform booking validation... 
+fetch List of product code entity  for : YNZ 
+fetch Commodity with commodity code : MISCELLANE 
+"Product offer repository will fetch List of product code from : General Cargo, not restr  "
+[Perform validation for product and commodity... 
+"Validate booking repository will fetch count of combination of Commodity description : General Cargo, not restr and channel name : LCAGEmployee "
+Validate booking repository will fetch count of combination of Product code : YNZ and channel name : LCAGEmployee 
+[ValidateBooking] Skip the validation for Product ChargeableWeight! 
+[ValidateBooking] Skip the validation for the Product min Weight! 
+Allowed Spls For channel : LCAGEmployee will fetch List of spls 
+Allowed Spls For channel : LCAGEmployee will fetch List of spls 
+[BusinessPartner.Get] Fetching business partner by customer number 332242903 
+[BusinessPartnerFeignClient#getBusinessPartnerByCustomerNumber]  Request Headers 
+[BusinessPartnerFeignClient#getBusinessPartnerByCustomerNumber]  Request Basic Information 
+Received request on GET /booking/businesspartner/v4/businesspartner 
+"key x-internal-call has value: 1.1 v1-akamaitech.net(ghost) (AkamaiGHost),1.1 akamai.net(ghost) (AkamaiGHost)  "
+Subset of headers on GET /booking/businesspartner/v4/businesspartner 
+key x-channelconsumer has value: BCTL  
+key x-envoy-original-path has value: /int/booking/routeoffer/internalrouteoffer/v8/bestroutes  
+creating Header proxy 
+"GET ""/booking/businesspartner/v4/businesspartner?customerNumber=332242903"", parameters={masked} "
+key x-channelid has value: bookITcargo  
+"Mapped to com.lhcargo.booking.businesspartner.controller.BusinessPartnerController#_getBusinessPartners(String, String, String, String, String, String, String, String, String, String, String, String, String, String) "
+key x-channeluser has value: manoharan.thambi@lhind.dlh.de  
+key x-forwarded-proto has value: https  
+key x-appversion has value: 2.18.1  
+key x-akamai-config-log-detail has value: true  
+key x-envoy-attempt-count has value: 1  
+key x-envoy-external-address has value: 10.253.203.197  
+key x-edgeconnect-session-id has value: 3c6adead67c5d3396525781  
+"key x-userroles has value: ServiceRecovery,OBS,HubExpert,BCTLSales,CapacityOptimizer  "
+"HTTP method: GET, Last part of URL: businesspartner "
+key x-b3-parentspanid has value: 132b89fb4e78b8e1  
+key x-sessionid has value: SID-5e031211-38dd-405b-8b91-4faa92b4d74e  
+key x-b3-sampled has value: 0  
+key x-b3-spanid has value: eb92b51819e127c0  
+"key x-forwarded-client-cert has value: By=spiffe://cluster.local/ns/be-booking-sprint-int/sa/businesspartner-v4;Hash=0c655cc12e6fbd62f6ee288dd331f2e36c935ded1ad4dd81221410d84c34538e;Subject="""";URI=spiffe://cluster.local/ns/be-booking-sprint-int/sa/productoffer-v3  "
+Received request on com.lhcargo.booking.businesspartner.api.controller.BusinessPartnerControllerApi._getBusinessPartners() 
+key x-b3-traceid has value: 419cb75ea23e60512b1302c25ee33417  
+key x-request-id has value: ba9e4442-1219-4655-97af-9eabfe300bbd  
+select
+select
+"[BusinessPartner.Get] Search for customerNumber, role (if set) and status ""Active"" - unique "
+select
+select
+select
+select
+select
+select
+select
+select
+select
+select
+select
+select
+[
+Writing [class BusinessPartnerServiceResponse {<EOL>    apiHeader: class ResponseApiHeader {<EOL>        conversation (truncated)...] 
+Method com.lhcargo.booking.businesspartner.api.controller.BusinessPartnerControllerApi._getBusinessPartners() finished processing in 28ms 
+"Using 'application/json', given [*/*] and supported [application/json] "
+Completed 200 OK 
+[BusinessPartnerFeignClient#getBusinessPartnerByCustomerNumber]  Response Basic Information 
+[BusinessPartnerFeignClient#getBusinessPartnerByCustomerNumber]  Response Headers 
+[BusinessPartnerFeignClient#getBusinessPartnerByCustomerNumber]  Response Payload 
+fetch List of product code entity  for : ZXF 
+fetch Commodity with commodity code : MISCELLANE 
+[HandlingCodes] Replace the handlingCodes with handlingCodesByUser when the channel is for Portal and LCAGEmployees: true 
+fetch List of product code entity  for : YNZ 
+"[HandlingCodes] Generated handling codes, [SLY, GEN] for the channel, LCAGEmployee "
+"[HandlingCodes] The Handling Codes list merged with HandlingCodesByUser: [SLY, GEN] "
+[HandlingCodes] HandlingCodesByUser after removing auto-generated codes : [] 
+"[HandlingCodeService] Fetch ContradictiveHandlingCodes with execution order for {}[SLY, GEN] "
+"[HandlingCodes] The Handling Codes list after applying BUP/ULD logic : [SLY, GEN] "
+"[HandlingCodes] The Handling Codes list after applying NOK logic : [SLY, GEN] "
+"[HandlingCodes] Station NOK Present : false, ConfirmedOkToForward: null "
+[ProductOfferDataService] Fetch all ContradictiveHandlingCodes from DB/Cache 
+"[HandlingCodeService] Removing ContradictiveHandlingCodes, [XOM, ZXF, XLY] for SLY "
+"[HandlingCodeService] After removing ContradictiveHandlingCodes - HandlingCodes: [SLY, GEN], HandlingCodesByUser: [] "
+"Database call to fetch SPLs ordered by priority from DB : [SLY, GEN] "
+[HandlingCodes] Size of SplList with the priority fetched from DB : 2 
+[ValidateBooking] Is certificate check required for BUP: false 
+[BookingRequestValidation.GenerateUpsellingHandlingCodesByUser] Set handling codes (payload) 
+[ValidateBooking] Is certificate check required for AVI: false 
+"[Validate Origin] Channel : LCAGEmployee,  Origin : FRA, ValidStationToExport : true "
+"[Validate Destination] Channel : LCAGEmployee,  Destination : JFK, ValidStationToImport : true "
+"[BookingRequestValidation][ValidateNokSplForDestinationStation] Skip NOK check for the role(s): [ServiceRecovery, OBS, HubExpert, BCTLSales, CapacityOptimizer] "
+[ProductOfferFeignClient#validateBookingRequest]  Response Basic Information 
+Calling RouteOffer service to get bestRoutes 
+[ProductOfferFeignClient#validateBookingRequest]  Response Headers 
+[ProductOfferFeignClient#validateBookingRequest]  Response Payload 
+IROVB: 303ms 
+Method com.lhcargo.booking.productoffer.api.controller.BookingValidationApi._validateBookingUsingPOST() finished processing in 274ms 
+Start main call: 2025-03-03T16:05:13.646164550 
+[RouteOfferFeignClient#getBestRoutes]  Request Basic Information 
+[RouteOfferFeignClient#getBestRoutes]  Request Headers 
+[RouteOfferFeignClient#getBestRoutes]  Request Payload 
+key x-akamai-config-log-detail has value: true  
+Subset of headers on POST /booking/routeoffer/v11/bestroutes 
+Received request on POST /booking/routeoffer/v11/bestroutes with Json body 
+key x-channeluser has value: manoharan.thambi@lhind.dlh.de  
+"key x-forwarded-client-cert has value: By=spiffe://cluster.local/ns/be-booking-sprint-int/sa/routeoffer-v11;Hash=3344bde92ffc4fd97f18ad660b722268aac20cd69b73b9b57237971f5a796c69;Subject="""";URI=spiffe://cluster.local/ns/be-booking-sprint-int/sa/internalrouteoffer-v8  "
+key x-forwarded-proto has value: https  
+creating Header proxy 
+key x-envoy-external-address has value: 10.253.203.197  
+"key x-userroles has value: HubExpert,CapacityOptimizer,ServiceRecovery,OBS,BCTLSales  "
+key x-envoy-original-path has value: /int/booking/routeoffer/internalrouteoffer/v8/bestroutes  
+key x-appversion has value: 2.18.1  
+key x-channelid has value: bookITcargo  
+key x-sessionid has value: SID-5e031211-38dd-405b-8b91-4faa92b4d74e  
+key x-envoy-attempt-count has value: 1  
+"key x-internal-call has value: 1.1 v1-akamaitech.net(ghost) (AkamaiGHost),1.1 akamai.net(ghost) (AkamaiGHost)  "
+key x-edgeconnect-session-id has value: 3c6adead67c5d3396525781  
+key x-request-id has value: ba9e4442-1219-4655-97af-9eabfe300bbd  
+key x-channelconsumer has value: BCTL  
+key x-b3-spanid has value: b5f74296d8f01c8e  
+key x-b3-sampled has value: 0  
+key x-b3-parentspanid has value: c4a653bee4a520ec  
+key x-b3-traceid has value: 419cb75ea23e60512b1302c25ee33417  
+Received request on com.lhcargo.booking.routeoffer.controller.BestRoutesRestController.getBestRoutes() 
+[More Routes] Not available - Either not requested or the former route offer cannot be found 
+Processing Create Workflow... 
+"[DeeperMetaSearch]: DeeperMetaSearch required: false, isFlightDesignatorPresent: true, requestedAllocationCodes: [] "
+[RouteOffer.CCSFCheck] RULE03 - CCSFCheckHandlingCodes: NOT PRESENT; SecuredShipmentToRS: true 
+"The request source : Booking Flow derived from ChannelName bookITcargo, ChannelConsumer easyBooking, bookingWorkflow : null, processFlow : Booking Flow "
+[Routing.GetRoutes] Preparation - filtered 0 OAL segments 
+[RoutesFeignClient#getRoutes]  Request Headers 
+ROFGRT: 1ms 
+[RoutesFeignClient#getRoutes]  Request Basic Information 
+[RoutesFeignClient#getRoutes]  Request Payload 
+Received request on POST /booking/routing/v1/routes with Json body 
+Subset of headers on POST /booking/routing/v1/routes 
+key x-b3-traceid has value: 419cb75ea23e60512b1302c25ee33417  
+key x-sessionid has value: SID-5e031211-38dd-405b-8b91-4faa92b4d74e  
+"key x-userroles has value: HubExpert,CapacityOptimizer,ServiceRecovery,OBS,BCTLSales  "
+key x-envoy-external-address has value: 10.253.203.197  
+key x-b3-spanid has value: f5464d3f8a3b9d66  
+key x-envoy-original-path has value: /int/booking/routeoffer/internalrouteoffer/v8/bestroutes  
+"key x-forwarded-client-cert has value: By=spiffe://cluster.local/ns/be-booking-sprint-int/sa/routing-v1;Hash=72c0b8071150a903ceb544c61cd0f1384cc40fd4825957a5db808fe16e274e7f;Subject="""";URI=spiffe://cluster.local/ns/be-booking-sprint-int/sa/routeoffer-v11  "
+key x-channelid has value: bookITcargo  
+key x-forwarded-proto has value: https  
+key x-envoy-attempt-count has value: 1  
+key x-edgeconnect-session-id has value: 3c6adead67c5d3396525781  
+key x-channelconsumer has value: BCTL  
+key x-appversion has value: 2.18.1  
+key x-b3-parentspanid has value: 79d849d3df5b7228  
+"key x-internal-call has value: 1.1 v1-akamaitech.net(ghost) (AkamaiGHost),1.1 akamai.net(ghost) (AkamaiGHost)  "
+key x-akamai-config-log-detail has value: true  
+key x-request-id has value: ba9e4442-1219-4655-97af-9eabfe300bbd  
+creating Header proxy 
+key x-channeluser has value: manoharan.thambi@lhind.dlh.de  
+Received request on com.lhcargo.booking.routing.api.controller.RoutingServiceControllerApi._getRoutesUsingPOST() 
+key x-b3-sampled has value: 0  
+"Method was called, Circuit closed "
+"NEWBE-19218#rule1 does not apply, skipping further checks. (no PieceGroups or UldGroups defined) "
+[RoutingSelectorFeignClient#getRoutesResponse]  Request Payload 
+[RoutingSelectorFeignClient#getRoutesResponse]  Request Headers 
+[RoutingSelectorFeignClient#getRoutesResponse]  Request Basic Information 
+[RoutingSelectorFeignClient#getRoutesResponse]  Response Payload 
+[RoutingSelectorFeignClient#getRoutesResponse]  Response Basic Information 
+[RoutingSelectorFeignClient#getRoutesResponse]  Response Headers 
+[RoutesFeignClient#getRoutes]  Response Basic Information 
+[RoutesFeignClient#getRoutes]  Response Headers 
+[RoutesFeignClient#getRoutes]  Response Payload 
+[LoadabilityFeignClient#performLoadabilityCheck]  Request Payload 
+Method com.lhcargo.booking.routing.api.controller.RoutingServiceControllerApi._getRoutesUsingPOST() finished processing in 505ms 
+[LoadabilityFeignClient#performLoadabilityCheck]  Request Headers 
+[LoadabilityFeignClient#performLoadabilityCheck]  Request Basic Information 
+ROFLLC : 1ms 
+Received request on POST /booking/loadability/v5/loadabilitycheck with Json body 
+key x-envoy-attempt-count has value: 1  
+key x-channelid has value: bookITcargo  
+"key x-internal-call has value: 1.1 v1-akamaitech.net(ghost) (AkamaiGHost),1.1 akamai.net(ghost) (AkamaiGHost)  "
+key x-envoy-original-path has value: /int/booking/routeoffer/internalrouteoffer/v8/bestroutes  
+"key x-forwarded-client-cert has value: By=spiffe://cluster.local/ns/be-booking-sprint-int/sa/loadability-v5;Hash=72c0b8071150a903ceb544c61cd0f1384cc40fd4825957a5db808fe16e274e7f;Subject="""";URI=spiffe://cluster.local/ns/be-booking-sprint-int/sa/routeoffer-v11  "
+key x-request-id has value: ba9e4442-1219-4655-97af-9eabfe300bbd  
+creating Header proxy 
+key x-sessionid has value: SID-5e031211-38dd-405b-8b91-4faa92b4d74e  
+Subset of headers on POST /booking/loadability/v5/loadabilitycheck 
+key x-channeluser has value: manoharan.thambi@lhind.dlh.de  
+"key x-userroles has value: HubExpert,CapacityOptimizer,ServiceRecovery,OBS,BCTLSales  "
+key x-channelconsumer has value: BCTL  
+key x-akamai-config-log-detail has value: true  
+key x-edgeconnect-session-id has value: 3c6adead67c5d3396525781  
+key x-forwarded-proto has value: https  
+key x-appversion has value: 2.18.1  
+key x-envoy-external-address has value: 10.253.203.197  
+key x-b3-traceid has value: 419cb75ea23e60512b1302c25ee33417  
+key x-b3-spanid has value: f9359c9af8118a7f  
+Received request on com.lhcargo.booking.loadability.controller.LoadabilityController.loadabilityCheck() 
+key x-b3-parentspanid has value: 4058933a2cc94bbf  
+key x-b3-sampled has value: 0  
+"Log messages in payload, in processing sequence ->"
+[LoadabilityFeignClient#performLoadabilityCheck]  Response Basic Information 
+[LoadabilityFeignClient#performLoadabilityCheck]  Response Headers 
+[LoadabilityFeignClient#performLoadabilityCheck]  Response Payload 
+"Moved 0 routes to the non-booking, 1 bookable routes remaining "
+Method com.lhcargo.booking.loadability.controller.LoadabilityController.loadabilityCheck() finished processing in 1ms 
+[JointVentureFeignClient#performRelevanceCheck]  Request Headers 
+[CapacityFeignClient#getCapacities]  Request Basic Information 
+[JointVentureFeignClient#performRelevanceCheck]  Request Basic Information 
+ROFJVR: 1ms 
+[CapacityFeignClient#getCapacities]  Request Headers 
+ROFGCP: 0ms 
+[JointVentureFeignClient#performRelevanceCheck]  Request Payload 
+[CapacityFeignClient#getCapacities]  Request Payload 
+ROFCGV1ms 
+[CapacityFeignClient#fetchGrossVolume]  Request Payload 
+Received request on POST /booking/capacity/v7/capacities with Json body 
+Subset of headers on POST /booking/capacity/v7/grossvolume 
+Received request on POST /booking/jointventure/v3/relevancecheck with Json body 
+creating Header proxy 
+Subset of headers on POST /booking/capacity/v7/capacities 
+creating Header proxy 
+key x-akamai-config-log-detail has value: true  
+Received request on POST /booking/capacity/v7/grossvolume with Json body 
+key x-akamai-config-log-detail has value: true  
+Subset of headers on POST /booking/jointventure/v3/relevancecheck 
+"key x-internal-call has value: 1.1 v1-akamaitech.net(ghost) (AkamaiGHost),1.1 akamai.net(ghost) (AkamaiGHost)  "
+key x-envoy-original-path has value: /int/booking/routeoffer/internalrouteoffer/v8/bestroutes  
+key x-b3-traceid has value: 419cb75ea23e60512b1302c25ee33417  
+key x-channelconsumer has value: BCTL  
+key x-edgeconnect-session-id has value: 3c6adead67c5d3396525781  
+key x-sessionid has value: SID-5e031211-38dd-405b-8b91-4faa92b4d74e  
+key x-channelid has value: bookITcargo  
+key x-channelconsumer has value: BCTL  
+key x-envoy-attempt-count has value: 1  
+"key x-forwarded-client-cert has value: By=spiffe://cluster.local/ns/be-booking-sprint-int/sa/capacity-v7;Hash=72c0b8071150a903ceb544c61cd0f1384cc40fd4825957a5db808fe16e274e7f;Subject="""";URI=spiffe://cluster.local/ns/be-booking-sprint-int/sa/routeoffer-v11  "
+key x-appversion has value: 2.18.1  
+key x-request-id has value: ba9e4442-1219-4655-97af-9eabfe300bbd  
+key x-request-id has value: ba9e4442-1219-4655-97af-9eabfe300bbd  
+key x-envoy-attempt-count has value: 1  
+"key x-userroles has value: HubExpert,CapacityOptimizer,ServiceRecovery,OBS,BCTLSales  "
+key x-channelid has value: bookITcargo  
+key x-channelconsumer has value: BCTL  
+key x-channeluser has value: manoharan.thambi@lhind.dlh.de  
+"key x-internal-call has value: 1.1 v1-akamaitech.net(ghost) (AkamaiGHost),1.1 akamai.net(ghost) (AkamaiGHost)  "
+key x-envoy-original-path has value: /int/booking/routeoffer/internalrouteoffer/v8/bestroutes  
+key x-sessionid has value: SID-5e031211-38dd-405b-8b91-4faa92b4d74e  
+key x-channelid has value: bookITcargo  
+key x-edgeconnect-session-id has value: 3c6adead67c5d3396525781  
+key x-appversion has value: 2.18.1  
+key x-akamai-config-log-detail has value: true  
+key x-envoy-external-address has value: 10.253.203.197  
+key x-forwarded-proto has value: https  
+key x-b3-spanid has value: 1f7b23186732dd20  
+key x-appversion has value: 2.18.1  
+key x-channeluser has value: manoharan.thambi@lhind.dlh.de  
+creating Header proxy 
+key x-envoy-external-address has value: 10.253.203.197  
+key x-channeluser has value: manoharan.thambi@lhind.dlh.de  
+key x-forwarded-proto has value: https  
+key x-forwarded-proto has value: https  
+key x-sessionid has value: SID-5e031211-38dd-405b-8b91-4faa92b4d74e  
+key x-envoy-attempt-count has value: 1  
+key x-b3-sampled has value: 0  
+key x-b3-spanid has value: f41fab4c0cab410b  
+"key x-userroles has value: HubExpert,CapacityOptimizer,ServiceRecovery,OBS,BCTLSales  "
+key x-b3-traceid has value: 419cb75ea23e60512b1302c25ee33417  
+key x-b3-traceid has value: 419cb75ea23e60512b1302c25ee33417  
+key x-b3-parentspanid has value: 4bf9ce4c34a89304  
+key x-envoy-original-path has value: /int/booking/routeoffer/internalrouteoffer/v8/bestroutes  
+"key x-forwarded-client-cert has value: By=spiffe://cluster.local/ns/be-booking-sprint-int/sa/jointventure-v3;Hash=72c0b8071150a903ceb544c61cd0f1384cc40fd4825957a5db808fe16e274e7f;Subject="""";URI=spiffe://cluster.local/ns/be-booking-sprint-int/sa/routeoffer-v11  "
+"key x-internal-call has value: 1.1 v1-akamaitech.net(ghost) (AkamaiGHost),1.1 akamai.net(ghost) (AkamaiGHost)  "
+Received request on com.lhcargo.booking.capacity.controller.CapacityController.getCapacities() 
+key x-b3-parentspanid has value: 5e4e4ce769634c29  
+key x-request-id has value: ba9e4442-1219-4655-97af-9eabfe300bbd  
+key x-edgeconnect-session-id has value: 3c6adead67c5d3396525781  
+key x-envoy-external-address has value: 10.253.203.197  
+"key x-userroles has value: HubExpert,CapacityOptimizer,ServiceRecovery,OBS,BCTLSales  "
+key x-b3-sampled has value: 0  
+key x-b3-sampled has value: 0  
+key x-b3-spanid has value: faf264aefe171610  
+key x-b3-parentspanid has value: 7e5ab1db5b452c2c  
+"key x-forwarded-client-cert has value: By=spiffe://cluster.local/ns/be-booking-sprint-int/sa/capacity-v7;Hash=72c0b8071150a903ceb544c61cd0f1384cc40fd4825957a5db808fe16e274e7f;Subject="""";URI=spiffe://cluster.local/ns/be-booking-sprint-int/sa/routeoffer-v11  "
+Received request on com.lhcargo.booking.capacity.controller.GrossVolumeController.grossVolume() 
+Received request on com.lhcargo.booking.jointventure.controller.JointVentureController.relevanceCheck() 
+Fast exit JV relevanceCheck. SegmentFlightTransportCarrierType is E for all segments of all routes. 
+[JointVentureFeignClient#performRelevanceCheck]  Response Payload 
+[JointVentureFeignClient#performRelevanceCheck]  Response Headers 
+[JointVentureFeignClient#performRelevanceCheck]  Response Basic Information 
+[GetGrossVolumeFeignClient#getCalculateStowageLossResponse]  Request Basic Information 
+[GetFlightSegmentCapacityFeignClient#getFlightSegmentCapacityNativeResponse]  Request Basic Information 
+[GetGrossVolumeFeignClient#getCalculateStowageLossResponse]  Request Payload 
+[GetGrossVolumeFeignClient#getCalculateStowageLossResponse]  Request Headers 
+[GetFlightSegmentCapacityFeignClient#getFlightSegmentCapacityNativeResponse]  Request Payload 
+Method com.lhcargo.booking.jointventure.controller.JointVentureController.relevanceCheck() finished processing in 1ms 
+[GetFlightSegmentCapacityFeignClient#getFlightSegmentCapacityNativeResponse]  Request Headers 
+[GetGrossVolumeFeignClient#getCalculateStowageLossResponse]  Response Basic Information 
+"Log messages in payload, in processing sequence ->"
+[GetGrossVolumeFeignClient#getCalculateStowageLossResponse]  Response Headers 
+[CapacityFeignClient#fetchGrossVolume]  Response Headers 
+[GetGrossVolumeFeignClient#getCalculateStowageLossResponse]  Response Payload 
+[CapacityFeignClient#fetchGrossVolume]  Response Payload 
+Method com.lhcargo.booking.capacity.controller.GrossVolumeController.grossVolume() finished processing in 500ms 
+[GetFlightSegmentCapacityFeignClient#getFlightSegmentCapacityNativeResponse]  Response Headers 
+[GetFlightSegmentCapacityFeignClient#getFlightSegmentCapacityNativeResponse]  Response Payload 
+Send FlightSegmentCapacityCache message. MessageId: 6241f0cf-e498-45cd-933f-30e711cb9ee7 
+[GetFlightSegmentCapacityFeignClient#getFlightSegmentCapacityNativeResponse]  Response Basic Information 
+"Receive FlightSegmentCapacityCache message. MessageId: 6241f0cf-e498-45cd-933f-30e711cb9ee7, SessionId: , Sequence #: 432249, EnqueuedTime: 2025-03-03T16:05:14.800Z, EnqueuedSequence #: 0 "
+"Log messages in payload, in processing sequence -> "
+[CapacityFeignClient#getCapacities]  Response Payload 
+[CapacityFeignClient#getCapacities]  Response Headers 
+ROFGCC : 0ms 
+[CapacityFeignClient#getCapacities]  Response Basic Information 
+[PricingFeignClient#getRouteRates]  Request Basic Information 
+ROFPRR: 0ms 
+Method com.lhcargo.booking.capacity.controller.CapacityController.getCapacities() finished processing in 553ms 
+[PricingFeignClient#getRouteRates]  Request Headers 
+[CapacityFeignClient#performCapacityCheck]  Request Headers 
+[CapacityFeignClient#performCapacityCheck]  Request Basic Information 
+[CapacityFeignClient#performCapacityCheck]  Request Payload 
+[FlightControlFeignClient#performQueueingCheck]  Request Basic Information 
+ROFFQC: 1ms 
+[PricingFeignClient#getRouteRates]  Request Payload 
+[FlightControlFeignClient#performQueueingCheck]  Request Payload 
+[FlightControlFeignClient#performQueueingCheck]  Request Headers 
+Received request on POST /booking/capacity/v7/capacitycheck with Json body 
+key x-edgeconnect-session-id has value: 3c6adead67c5d3396525781  
+key x-channelid has value: bookITcargo  
+creating Header proxy 
+Subset of headers on POST /booking/capacity/v7/capacitycheck 
+key x-forwarded-proto has value: https  
+key x-channeluser has value: manoharan.thambi@lhind.dlh.de  
+key x-envoy-original-path has value: /int/booking/routeoffer/internalrouteoffer/v8/bestroutes  
+key x-appversion has value: 2.18.1  
+key x-envoy-external-address has value: 10.253.203.197  
+key x-akamai-config-log-detail has value: true  
+key x-channelconsumer has value: BCTL  
+key x-envoy-attempt-count has value: 1  
+key x-sessionid has value: SID-5e031211-38dd-405b-8b91-4faa92b4d74e  
+key x-b3-traceid has value: 419cb75ea23e60512b1302c25ee33417  
+"key x-internal-call has value: 1.1 v1-akamaitech.net(ghost) (AkamaiGHost),1.1 akamai.net(ghost) (AkamaiGHost)  "
+key x-request-id has value: ba9e4442-1219-4655-97af-9eabfe300bbd  
+key x-b3-parentspanid has value: d9002a737eaa4e6b  
+"key x-forwarded-client-cert has value: By=spiffe://cluster.local/ns/be-booking-sprint-int/sa/capacity-v7;Hash=72c0b8071150a903ceb544c61cd0f1384cc40fd4825957a5db808fe16e274e7f;Subject="""";URI=spiffe://cluster.local/ns/be-booking-sprint-int/sa/routeoffer-v11  "
+key x-b3-spanid has value: c62ee667edac0983  
+"key x-userroles has value: HubExpert,CapacityOptimizer,ServiceRecovery,OBS,BCTLSales  "
+key x-b3-sampled has value: 0  
+Received request on com.lhcargo.booking.capacity.controller.CapacityController.capacityCheck() 
+Both Guarantee and AutoKK capacity checks are false 
+Requested segment present in the booking. Update case: false 
+Subset of headers on POST /booking/flightcontrol/v6/queueingcheck 
+Received request on POST /booking/flightcontrol/v6/queueingcheck with Json body 
+Received request on com.lhcargo.booking.flightcontrol.controller.FlightControlController.queueingCheck() 
+Subset of headers on POST /booking/pricing/v8/routerates 
+Received request on POST /booking/pricing/v8/routerates with Json body 
+"[ChannelService] API Header after mapping: RequestApiHeader(conversationId=6241f0cf-e498-45cd-933f-30e711cb9ee7, channelId=bookITcargo, channelConsumer=easyBooking, channelUser=U776856, tenantId=183), x-userRoles: [ServiceRecovery, OBS, HubExpert, BCTLSales, CapacityOptimizer], x-channelUser: manoharan.thambi@lhind.dlh.de "
+Received request on com.lhcargo.booking.pricing.controller.CalculateRouteRateController.calculateRouteRate() 
+"queueByStationAndOffice check for station/office/date/handlingCodes: FRA/FY/2025-03-07/[SLY, GEN] "
+Skip queueByStationAndOffice check 
+[WeightVolumeCheck] td.Pro weight is : 7000.00 and volume is : 30.00  
+Remove old red queue remarks. Add queue remark CP005. 
+"validateRequestForICE filteredSegments size : 1 isDryIce : false isAllowedToSkipSplit : false, fastExitForSplit : false "
+setting GREEN FCTL check result for route 1 
+"validateRequestForRRY filteredSegments size : 1 tiQuantityNullOrGreaterThanZero : false isRry : false, fastExitForSplit : false, isAllowedToSkipSplit:false "
+"Validation not success for BIG, ICE, RRY, ACT nor USG13 "
+setting GREEN FCTL check result for route 1 
+Method com.lhcargo.booking.flightcontrol.controller.FlightControlController.queueingCheck() finished processing in 6ms 
+[FlightControlFeignClient#performQueueingCheck]  Response Payload 
+[FlightControlFeignClient#performQueueingCheck]  Response Headers 
+[FlightControlFeignClient#performQueueingCheck]  Response Basic Information 
+"[External Service Calls][Eagle/AccessPrice] Condition: true, Call: true "
+[RRR Rules][rule 1/11] PE Call: true; Perform Pricing Decision: true; RRR Rule 40 valid: false 
+"[External Service Calls][Spot&Spy] Condition: makePECall, Call: true "
+"[External Service Calls][EvaCon/OtherCharges] Condition: isLHAirline || isJVAirline, Call: true "
+"[External Service Calls][PriceLevels] Condition: isLHAirline, Call: true "
+[OAL Rate] Found 0 unique flight segments 
+"[External Service Calls][PricingEngine/GetRevenuePrice] Condition: makePECall, Call: true "
+"[JointVentureRevenueRates] Skipping JointVentureRevenueRates call. JointVentureRevenueRatesRequired: false, carrierNumericCode: 020, awbNumber: null "
+"[""getPriceLevel""] Request Headers "
+"[""getPriceLevel""] Request Payload "
+[CapacityFeignClient#performCapacityCheck]  Response Headers 
+[CapacityFeignClient#performCapacityCheck]  Response Basic Information 
+"Log messages in payload, in processing sequence ->"
+"Log messages in payload, in processing sequence -> "
+Change FreeSaleCapacityCheckResult to yellow. 
+[CapacityFeignClient#performCapacityCheck]  Response Payload 
+Method com.lhcargo.booking.capacity.controller.CapacityController.capacityCheck() finished processing in 38ms 
+[SpotAndSpyFeignClient#retrieveLightSpotAndSpyQuotationMonitoringDataListResponse]  Request Basic Information 
+[SpotAndSpyFeignClient#retrieveLightSpotAndSpyQuotationMonitoringDataListResponse]  Request Headers 
+[SpotAndSpyFeignClient#retrieveLightSpotAndSpyQuotationMonitoringDataListResponse]  Request Payload 
+"[""evaluateRatePriceSPOT""] Request Headers "
+"[""evaluateRatePriceSPOT""] Request Payload "
+"[""getAccessPrice""] Request Payload "
+"[""getAccessPrice""] Request Headers "
+"[""getAccessPrice""] Response Payload "
+"[""getPriceLevel""] Response Payload "
+[SpotAndSpyFeignClient#retrieveLightSpotAndSpyQuotationMonitoringDataListResponse]  Response Headers 
+[SpotAndSpyFeignClient#retrieveLightSpotAndSpyQuotationMonitoringDataListResponse]  Response Payload 
+[SpotAndSpyFeignClient#retrieveLightSpotAndSpyQuotationMonitoringDataListResponse]  Response Basic Information 
+"[""evaluateRatePriceSPOT""] Response Payload "
+[OtherChargeCodeWhitelist] The OtherChargeCode DF is not whitelisted 
+[GetRevenuePriceFeignClient#getRevenueResponse]  Request Headers 
+[GetRevenuePriceFeignClient#getRevenueResponse]  Request Payload 
+[GetRevenuePriceFeignClient#getRevenueResponse]  Request Basic Information 
+[GetRevenuePriceFeignClient#getRevenueResponse]  Response Basic Information 
+[GetRevenuePriceFeignClient#getRevenueResponse]  Response Headers 
+[GetRevenuePriceFeignClient#getRevenueResponse]  Response Payload 
+NEG workflow: false 
+Airline type indicator: E 
+[Pricing Decision] Performed on Route 1 
+[Pricing Decision] MAX booking check skipped; Condition: !updateChannelAllowed || !allRoutesRed || !marginalUpdate 
+[QuotationFeignClientService#getQuotationValidityParameters]  Request Basic Information 
+[QuotationFeignClientService#getQuotationValidityParameters]  Request Headers 
+PSQVP: 1ms 
+[QuotationFeignClientService#getQuotationValidityParameters]  Request Payload 
+creating Header proxy 
+key x-appversion has value: 2.18.1  
+key x-channelid has value: bookITcargo  
+Subset of headers on POST /booking/quotation/v9/quotationvalidityparameters 
+key x-channelconsumer has value: BCTL  
+key x-akamai-config-log-detail has value: true  
+Received request on POST /booking/quotation/v9/quotationvalidityparameters with Json body 
+key x-b3-traceid has value: 419cb75ea23e60512b1302c25ee33417  
+"key x-forwarded-client-cert has value: By=spiffe://cluster.local/ns/be-booking-sprint-int/sa/quotation-v9;Hash=2eecde4d5073586e5cf949730e151c186e80f1754be2b17a816cdf0b54b452ee;Subject="""";URI=spiffe://cluster.local/ns/be-booking-sprint-int/sa/pricing-v8  "
+key x-request-id has value: ba9e4442-1219-4655-97af-9eabfe300bbd  
+key x-envoy-attempt-count has value: 1  
+key x-sessionid has value: SID-5e031211-38dd-405b-8b91-4faa92b4d74e  
+key x-envoy-external-address has value: 10.253.203.197  
+"HTTP method: POST, Last part of URL: quotationvalidityparameters "
+key x-forwarded-proto has value: https  
+key x-edgeconnect-session-id has value: 3c6adead67c5d3396525781  
+key x-channeluser has value: manoharan.thambi@lhind.dlh.de  
+key x-b3-spanid has value: 0491e7071b7b7aac  
+key x-b3-sampled has value: 0  
+"key x-internal-call has value: 1.1 v1-akamaitech.net(ghost) (AkamaiGHost),1.1 akamai.net(ghost) (AkamaiGHost)  "
+key x-b3-parentspanid has value: cda41a91cc74fe21  
+key x-envoy-original-path has value: /int/booking/routeoffer/internalrouteoffer/v8/bestroutes  
+"key x-userroles has value: HubExpert,CapacityOptimizer,ServiceRecovery,OBS,BCTLSales  "
+Received request on com.lhcargo.booking.quotation.api.controller.QuotationsControllerApi._quotationValidityParametersMultiRoutes() 
+"[calculateHurdleRateValidToInUTC] Day span to LAT 3, validity in hours 24 "
+Method com.lhcargo.booking.quotation.api.controller.QuotationsControllerApi._quotationValidityParametersMultiRoutes() finished processing in 21ms 
+[QuotationFeignClientService#getQuotationValidityParameters]  Response Headers 
+[QuotationFeignClientService#getQuotationValidityParameters]  Response Basic Information 
+[QuotationFeignClientService#getQuotationValidityParameters]  Response Payload 
+Method com.lhcargo.booking.pricing.controller.CalculateRouteRateController.calculateRouteRate() finished processing in 2334ms 
+[PricingFeignClient#getRouteRates]  Response Basic Information 
+[PricingFeignClient#getRouteRates]  Response Payload 
+[PricingFeignClient#getRouteRates]  Response Headers 
+Manual split requested or auto split possible: false 
+[Scorecard.Assessment] Scorecard based assessment of routes ON and AUTHORIZED for ALL users 
+Process split routes: false 
+Split offer allowed for channel EASY: true 
+filter message ->  
+ScoreCard calculation info -> 
+[ServiceBus.RouteOfferCreated] Processing message... 
+[Scorecard.Assessment] Scorecard based route assessment result 
+[POST BestRoutes#RouteOfferCreated] Message payload is:  
+Send RouteOfferCreatedMessage message. MessageId: 6241f0cf-e498-45cd-933f-30e711cb9ee7 
+[ServiceBus.RouteOfferCreated] Message sent to the service bus successfully 
+ROFGBR: 3576ms 
+Method com.lhcargo.booking.routeoffer.controller.BestRoutesRestController.getBestRoutes() finished processing in 3576ms 
+[RouteOfferFeignClient#getBestRoutes]  Response Headers 
+[RouteOfferFeignClient#getBestRoutes]  Response Basic Information 
+IROFGBR: 3597ms 
+[RouteOfferFeignClient#getBestRoutes]  Response Payload 
+Main /bestroutes complete at: 2025-03-03T16:05:17.243578036 
+[PricingFeignClient#convertCurrencies]  Request Headers 
+[PricingFeignClient#convertCurrencies]  Request Basic Information 
+[PricingFeignClient#convertCurrencies]  Request Payload 
+Received request on POST /booking/pricing/v8/currencyconversion with Json body 
+Subset of headers on POST /booking/pricing/v8/currencyconversion 
+Received request on com.lhcargo.booking.pricing.controller.CurrencyConversionController.convertCurrencies() 
+[IATA Rounding] Amount 645.25000 rounded to 645.25 for currency EUR with rounding off unit 0.01 
+[IATA Rounding] Amount 659.65000 rounded to 659.65 for currency EUR with rounding off unit 0.01 
+[IATA Rounding] Amount 3.95000 rounded to 3.95 for currency EUR with rounding off unit 0.01 
+[IATA Rounding] Amount -208.75000 rounded to -208.75 for currency EUR with rounding off unit 0.01 
+[IATA Rounding] Amount -5.11000 rounded to -5.11 for currency EUR with rounding off unit 0.01 
+Message body sent to the esb queue: LH.LCAG.NBESPRT.ROUTEOFFERSERVICE.ROUTEOFFER.NEWBE.RECEIVE 
+Method com.lhcargo.booking.pricing.controller.CurrencyConversionController.convertCurrencies() finished processing in 54ms 
+[PricingFeignClient#convertCurrencies]  Response Headers 
+[PricingFeignClient#convertCurrencies]  Response Payload 
+IROCC: 75ms 
+"Call to RouteOffer succeed, mapping response "
+Converted pricing values of RouteOffer response (payload) 
+[PricingFeignClient#convertCurrencies]  Response Basic Information 
+Method com.lhcargo.booking.routeoffer.internal.api.internalrouteoffer.controller.InternalrouteofferApi._fetchRoutesUsingPOST() finished processing in 4094ms 
+[RouteOfferFeignClient#getStoredRequest]  Response Payload 
+Method com.lhcargo.booking.routeoffer.controller.BestRoutesRestController.getStoredRequest() finished processing in 12ms 
+Stored booked rate request: 
+[ESBPricingEngineFeignClient#storeBookedRate]  Request Payload 
