@@ -1,9 +1,11 @@
+import os
+
 from jira import JIRA
 
 # Replace these with your Jira instance URL and credentials
 jira_url = 'https://trackspace.lhsystems.com'
 username = 'U776856'
-api_token = 'ODc3NzY0MTA4ODcxOiBJ9mv0YoroEjadWSd6IVQllX9G'
+api_token = os.getenv('CBP_JIRA_API_TOKEN')
 # Connect to Jira
 jira = JIRA(server=jira_url, token_auth=api_token)
 
