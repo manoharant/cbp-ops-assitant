@@ -3,23 +3,20 @@ from typing import List
 
 import asyncio
 
+from dotenv import load_dotenv
 from jira import JIRA
 from pydantic_ai.messages import ModelMessage, ModelRequest, UserPromptPart, ModelResponse, TextPart
 
 from jira_agent import JiraDeps, jira_agent
 
+load_dotenv()
 
 class JiraCLI:
     def __init__(self):
         self.messages: List[ModelMessage] = []
         self.jira_url = os.getenv('JIRA_URL')
-        self.username = os.getenv('JIRA_USERNAME')
         self.api_token = os.getenv("JIRA_API_TOKEN")
-        self.deps = JiraDeps(client=JIRA(server=self.jira_url,basic_auth=(self.username,self.api_token)),project_key='AIPOC')
-        #self.jira_url = 'https://trackspace.lhsystems.com'
-        #self.username = 'U776856'
-        #self.api_token = 'ODc3NzY0MTA4ODcxOiBJ9mv0YoroEjadWSd6IVQllX9G'
-        #self.deps = JiraDeps(client=JIRA(server=self.jira_url,token_auth=self.api_token),project_key='LCAGIM')
+        self.deps = JiraDeps(client=JIRA(server=self.jira_url,token_auth=self.api_token),project_key='AIPOC')
 
     async def chat(self):
         print("Jira Agent CLI (type 'quit' to exit)")

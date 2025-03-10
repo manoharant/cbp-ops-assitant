@@ -1,10 +1,11 @@
 import os
 
+from dotenv import load_dotenv
 from jira import JIRA
+load_dotenv()
 
 # Replace these with your Jira instance URL and credentials
 jira_url = os.getenv('CBP_JIRA_URL')
-username = os.getenv('CBP_JIRA_USERNAME')
 api_token = os.getenv('CBP_JIRA_API_TOKEN')
 # Connect to Jira
 jira = JIRA(server=jira_url, token_auth=api_token)
