@@ -12,8 +12,8 @@ from jira_agent import JiraDeps, jira_agent
 class JiraCLI:
     def __init__(self):
         self.messages: List[ModelMessage] = []
-        self.jira_url = 'https://manoharant.atlassian.net'
-        self.username = 'manoharant@gmail.com'
+        self.jira_url = os.getenv('JIRA_URL')
+        self.username = os.getenv('JIRA_USERNAME')
         self.api_token = os.getenv("JIRA_API_TOKEN")
         self.deps = JiraDeps(client=JIRA(server=self.jira_url,basic_auth=(self.username,self.api_token)),project_key='AIPOC')
         #self.jira_url = 'https://trackspace.lhsystems.com'

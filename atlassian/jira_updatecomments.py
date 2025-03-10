@@ -3,8 +3,8 @@ import os
 from jira import JIRA
 
 # Replace these with your Jira instance URL and credentials
-jira_url = 'https://manoharant.atlassian.net'
-username = 'manoharant@gmail.com'
+jira_url = os.getenv('JIRA_URL')
+username = os.getenv('JIRA_USERNAME')
 api_token = os.getenv('JIRA_API_TOKEN')
 
 # Connect to Jira
